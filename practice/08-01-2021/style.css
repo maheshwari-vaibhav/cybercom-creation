@@ -1,0 +1,25 @@
+
+
+.table
+{
+    text-align: center;
+}
+
+.table3
+{
+    border: 3px solid black; 
+}
+.table3 td
+{
+    border: 2px solid black; 
+}
+
+.table4
+{
+    border: 1px solid grey; 
+   
+}
+ .table4 th,.table4 td { 
+    border: 1px solid grey; 
+}
+

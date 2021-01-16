@@ -1,0 +1,51 @@
+.background
+{
+    background-color: whitesmoke;
+}
+.block
+{
+    text-align: center;
+}
+.img-block
+{
+    display: inline-block;
+    margin: 10px;;
+}
+
+.block-section
+{
+    width: 215px;
+    height: 315px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.caption
+{
+    display: block;
+    padding: 2px;
+    background-color: lightgray;
+    color: darkgray;
+} 
+p{
+    margin:0 15% 0;
+}
+
+.table
+{
+    text-align: center;
+}
+
+.table3
+{
+    border: 3px solid black; 
+}
+.table3 td
+{
+    border: 2px solid black; 
+}
+
