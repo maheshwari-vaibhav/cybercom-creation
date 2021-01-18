@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 7</title>
+        <link rel="stylesheet" href="htmltask7.css">
+      
+    </head>
+    <body>
+        <form action="success.html" method="POST">
+            <div class="section">
+                <span>Your address</span>
+
+                <div class="content">
+                    <div>
+                        <label for="fname">First name</label>
+                        <input type="text" name="fname" id="fname">
+                    </div> 
+                    <div>
+                        <label for="lname">Last name</label>
+                        <input type="text" name="fname" id="fname">
+
+                    </div>
+                    <div>
+                        <label for="street">Street</label>
+                        <input type="text" name="fname" id="fname">
+
+                    </div> 
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" name="fname" id="fname">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="section">
+                <span>Additional details</span>
+
+                <div class="content">
+                    <div>
+                        <label for="biography">Biography</label>
+                        <textarea name="biography" id="biography" cols="30" rows="3"></textarea>
+                    </div> 
+                    
+                    <div>
+                        <label for="image">Image</label>
+                        <input type="file" name="image" id="image">
+
+                    </div> 
+                    <div>
+                        <label for="age">Age group</label>
+                        <select name="age" id="age">
+                            <option value="1">0 to 9 years</option>
+                            <option value="2">10 to 12 years</option>
+                            <option value="3">13 to 19 years</option>
+                            <option value="4">20 to 30 years</option>
+                            <option value="5">30 to 45 years</option>
+                            <option value="6">46 and more years</option>
+                        </select>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="section">
+                <span>Intereset</span>
+
+                <div class="content">
+                    <div>
+                        <label for="hobby">Hobby</label>
+                        <select name="hobby" id="hobby" multiple aria-expanded="true">
+                            <option value="1">Playing Soccer</option>
+                            <option value="2">Dancing</option>
+                            <option value="3">Gardening</option>
+                            <option value="4">Watching movues</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="fcar">Favorite Car?</label>
+                        <select name="fcar" id="fcar">
+                            <option value="1">Volvo</option>
+                            <option value="2">Swift</option>
+                            <option value="3">BMW</option>
+                            <option value="4">Jaguar</option>
+                            <option value="5">Honda city</option>
+                            <option value="6">Creata</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="transport">Favorite public transport?</label>
+                        <select name="transport" id="transport" multiple aria-expanded="true">
+                            <optgroup label="Ground">
+                                <option value="train">Train</option>
+                                <option value="bus">Bus</option>
+                            </optgroup>
+                            <optgroup label="Water">
+                                <option value="ship">Ship</option>
+                            </optgroup>
+                            <optgroup label="Air">
+                                <option value="plan">Aeroplan</option>
+                                <option value="bus">Helicopter</option>
+                            </optgroup>
+
+                        </select>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="section">
+                <span>Action</span>
+                <div class="content">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+
+                </div>
+            </div>
+        </form>
+        
+        
+        
+    </body>
+
+ 
+</html>
