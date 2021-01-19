@@ -9,9 +9,9 @@
     <?php
         $fname = $_POST["fname"];
         $lname = $_POST["lname"];
-        $day_list = $_POST["day"];
-        $month_list = $_POST["month"];
-        $year_list = $_POST["year"];
+        $day = $_POST["day"];
+        $month = $_POST["month"];
+        $year = $_POST["year"];
         $gender = $_POST["gender"];
         $email = $_POST["email"];
         $pass = $_POST["password"];
@@ -38,7 +38,7 @@
         </tr>
         <tr>
             <th>Date of Birth</th>
-            <td><?php echo $day_list; ?>-<?php echo $month_list; ?>-<?php echo $year_list;?></td>
+            <td><?php echo $day; ?>-<?php echo $month; ?>-<?php echo $year;?></td>
         </tr>
         <tr>
             <th>Gender:</th>
