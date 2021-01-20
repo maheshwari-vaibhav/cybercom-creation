@@ -19,24 +19,22 @@ const rajan =
     email : 'rajansoni1277@gmail.com',
     number : '9998423736'
 };
-
+const jay = 
+{
+    name : 'Jay',
+    age : 21,
+    email : 'jaykhatri1998@gmail.com',
+    number : '979919288'
+};
 const data = [];
 data.push(vaibhav);
 data.push(renil);
 data.push(rajan);
+data.push(jay);
+
 
 console.log(data);
 
-localStorage.setItem('data',JSON.stringify(data));
+data.sort((a,b) => a.name.localeCompare(b.name));
 
-let arr = [];
-
-arr = JSON.parse(localStorage.getItem("data") || "[]");
-console.log(arr);
-
-document.write("<table border='1'>");
-for (const x of arr) 
-{
-    document.write(`<tr><td>${x.name}</td><td>${x.age}</td><td>${x.email}</td><td>${x.number}</td></tr>`);
-}
-document.write("</table>");
+console.log(data);
