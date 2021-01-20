@@ -1,4 +1,4 @@
-let data = JSON.parse(sessionStorage.getItem('data'));
+let data = JSON.parse(localStorage.getItem('data'));
 
 document.write("<table border='1'>");
 document.write(`<tr><th>Name</th><th>Email</th><th>Date of Birth</th></tr>`);

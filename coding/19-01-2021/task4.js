@@ -9,7 +9,11 @@ document.getElementById('submit').addEventListener('click',() =>{
         email : email,
         dob : dob
     };
+    let userdata = JSON.parse(localStorage.getItem('data'));
+    if (userdata) {
+        data = userdata;
+     }
     data.push(dataObj);
-    sessionStorage.setItem('data',JSON.stringify(data));
+    localStorage.setItem('data',JSON.stringify(data));
 
 } );
