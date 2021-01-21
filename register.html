@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 mt-5">
+                <span id="registermsg" class="text-center error"></span>
+                <form action="#">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Name" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email" id="email" name="email">
+                      </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control" placeholder="Password" id="password" name="password">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Confirm Password" id="cpassword" name="cpassword">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="city" name="city">
+                          <option value="" disabled selected>Select City</option>
+                          <option value="deesa">Deesa</option>
+                          <option value="patan">Patan</option>
+                          <option value="radhanpur">Radhanpur</option>
+                          <option value="ahmedabad">Ahmedabad</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="state" name="state">
+                          <option value="" disabled selected>Select State</option>
+                          <option value="gujarat">Gujarat</option>
+                          <option value="maharashtra">Maharashtra</option>
+                          <option value="rajasthan">Rajasthan</option>
+                          <option value="keral">Keral</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Terms & Conditions
+                      </label>
+                    </div>
+                    <button type="button" class="btn btn-block btn-warning" id="register" name="register">REGISTER</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
