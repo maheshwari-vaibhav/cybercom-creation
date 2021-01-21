@@ -48,7 +48,7 @@ function loadUserSessionData() {
     document.getElementById('usersessiondata').innerHTML = data;
 }
 
-
+// check birthdate function
 function checkBirthDate() {
     let userdata = JSON.parse(localStorage.getItem('users'));
 
@@ -63,5 +63,33 @@ function checkBirthDate() {
         document.getElementById('birthdaywish').innerHTML = '<h2 class="error text-center"> Happy Birthday !</h2>';
     }
     
-    
+}
+
+//count user age wise function
+
+function countUserAge() 
+{
+    let userdata = JSON.parse(localStorage.getItem('users'));
+
+    let less18User = userdata.filter((user) => user.age < 18);
+    let userBetween18to50 = userdata.filter((user) => user.age >= 18 && user.age < 50);
+    let userGreater50 = userdata.filter((user) => user.age >= 50);
+
+    document.getElementById('less18data').textContent = `${less18User.length} Users`;
+    document.getElementById('1850data').textContent = `${userBetween18to50.length} Users` ;
+    document.getElementById('greater50data').textContent = `${userGreater50.length} Users`;
+
+    findBirthdayUser();
+}
+
+//find birthday users who's birthday is today
+function findBirthdayUser() {
+    let userdata = JSON.parse(localStorage.getItem('users'));
+    let users = userdata.filter((user) => Number(user.dob.substring(10,8)) == new Date().getDay() && Number(user.dob.substring(7,5)) == (new Date().getMonth()+1) );
+    let data = '';
+    for (const user of users) {
+      data = `${data} Today is ${user.name}\'s birthday!<br>`;
+    }
+
+    document.getElementById('birthdayusers').innerHTML = data;
 }
