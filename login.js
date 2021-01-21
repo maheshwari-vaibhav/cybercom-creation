@@ -13,6 +13,12 @@ document.getElementById('login').addEventListener('click',()=>{
         let adminUser = JSON.parse(localStorage.getItem('adminUser'));
         if (adminUser.email === email && adminUser.password === password) {
            window.location = 'dashboard.html'; 
+
+           let userSession = {
+               name : adminUser.name,
+               loginDateTime : new Date().toLocaleString()//current date time
+           };
+           localStorage.setItem('userSession',JSON.stringify(userSession));
         } 
         else 
         {
