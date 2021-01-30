@@ -1,0 +1,27 @@
+<developers>
+    <developer>
+        <name>Vaibhav</name>
+        <age>23</age>
+        <detail>
+            <city>Deesa</city>
+            <mno>9558413998</mno>
+        </detail>
+    </developer>
+    <developer>
+        <name>Renil</name>
+        <age>23</age>
+        <detail>
+            <city>Patan</city>
+            <mno>8200385941</mno>
+        </detail>
+    </developer>
+    <developer>
+        <name>Rajan</name>
+        <age>21</age>
+        <detail>
+            <city>Thara</city>
+            <mno>9998423736</mno>
+        </detail>
+    </developer>
+</developers>
+© 2021 GitHub, Inc.
