@@ -1,0 +1,79 @@
+.error
+{
+    display: block;
+    color: red;
+    margin-left: 15px;
+}
+.blue
+{
+    background-color: #00CCFF;
+}
+.orange
+{
+    background-color: #DE8704;
+}
+.black
+{
+    background-color: black;
+    color: #B0D636;
+}
+.yellow
+{
+    background-color: #FFFFAA;
+}
+.green
+{
+    background-color: #00FF66;
+}
+table,fieldset
+{
+    width: 70%;
+}
+td{
+    padding: 5px;
+}
+input[type=text],input[type=password],input[type=file],textarea{
+    width: 100%;
+}
+
+.cheader
+{
+    background-color: #E77632;
+    color: white;
+    text-align: center;
+    padding: 0.1px;
+    font-size: larger;
+}
+
+.cbody
+{
+    background-color: #FBEFBF;
+}
+
+.cbody input[type=text] ,.cbody textarea{
+    margin: 15px;
+    width: 98%;
+    padding: 10px;
+}
+
+.cfooter input[type=submit]
+{
+    background-color: #F8CC37;
+    width: 100%;
+    color: #4C2915;
+    border: 0;
+    font-size: 36px;
+    padding: 15px;
+}
+
+.border-round
+{
+    border-radius: 15px !important;
+}
+
+.border-round-top
+{
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+
+}
