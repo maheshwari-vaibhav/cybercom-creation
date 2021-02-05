@@ -1,22 +1,24 @@
 <?php
     /*
         author  : vaibhav maheshwari
-        date    : 04-02-2021
+        date    : 05-02-2021
         
-        video - 189 - Introduction to OOP
-        video - 190 - Classes, Properties, and Methods
-        video - 191 - Return a Property Value
-        video - 192 - Changing a Property Value
+        video - 196 - Multiple Instances of Classes
+
     */
 
     class BankAccount {
-        public $balance = 1000;
+        public $balance = 0;
 
         public function displayBalance()
         {
             return $this->balance;
         }
 
+        public function deposite($amount)
+        {
+            $this->balance = $this->balance + $amount;
+        }
         public function withdraw($amount)
         {
             try {
@@ -33,7 +35,11 @@
     }
     
     $vaibhav = new BankAccount;
-    $vaibhav->withdraw(1100);
-    echo $vaibhav->displayBalance();
+    $vaibhav->deposite(1100);
+    echo 'vaibhav : '.$vaibhav->displayBalance();
+    echo '<br>';
+    $renil = new BankAccount;
+    $renil->deposite(1000);
+    echo 'renil : '.$renil->displayBalance();
 
 ?>

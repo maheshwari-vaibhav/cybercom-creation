@@ -1,7 +1,7 @@
 <?php
     /*
         author  : vaibhav maheshwari
-        date    : 03-02-2021
+        date    : 04-02-2021
 
         video - 185 - Throwing an Exception
         video - 186 - try, throw, catch
